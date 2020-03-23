@@ -45,7 +45,7 @@ def interpret(arg):
 
 
 def validate_date(y, m, d):
-    if y < 1999:
+    if y <= 99:
         y += 2000
     days_in_month = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if 2000 <= y <= 2999:
