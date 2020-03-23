@@ -25,14 +25,13 @@ def interpret(arg):
         found_solution = True
 
         if not validate_date(year, month, day):
-            tmp = year
-            year = day
-            day = month
-            month = tmp
+            tmp = month
+            month = day
+            day = tmp
             if not validate_date(year, month, day):
-                tmp = month
-                month = day
-                day = tmp
+                tmp = year
+                year = month
+                month = tmp
                 if not validate_date(year, month, day):
                     found_solution = False
 
